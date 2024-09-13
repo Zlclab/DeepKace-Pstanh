@@ -9,3 +9,7 @@ The models (DeepKace-Pstanh, DeepKace-ReLU, DeepKace-Tanh et al.) can be obtaine
 ```python
 python data_train.py
 ```
+## predict_results.csv.
+Prediction results of different activation functions.
+## dataset.csv.
+Training set, Validation set, and Test set are used to compare with other methods on an independent validation set.
