@@ -13,3 +13,15 @@ python data_train.py
 Prediction results of different activation functions.
 ## dataset.csv.
 Training set, Validation set, and Test set are used to compare with other methods on an independent validation set.
+
+# TransPTM
+## Prepare in advance
+You need to Download relevant files at https://hf-mirror.com/Rostlab/prot_t5_xl_half_uniref50-enc/tree/main.
+Generate graph data：
+```python
+python generate_data.py
+```
+Train the TransPTM:
+```python
+python main.py
+```
