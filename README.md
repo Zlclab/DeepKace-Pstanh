@@ -1,27 +1,19 @@
 # DeepKace-Pstanh
 ## Encoding protein sequences into numerical information.
-The dataset about lysine acetylation modification can be found in DeepKace-Pstanh/data_fasta/CS_ac.txt.
+The dataset about lysine acetylation modification can be found in DeepKace-Pstanh/data_fasta/train_set.txt and DeepKace-Pstanh/data_fasta/test_set.txt.
+Extract features with `data_code.py` before training the model.
 ```python
 python data_code.py
 ```
-## Training and evaluating DeepKace-Pstanh.
+## Training and testing DeepKace-Pstanh.
 The models (DeepKace-Pstanh, DeepKace-ReLU, DeepKace-Tanh et al.) can be obtained by using different activation functions.
 ```python
-python data_train.py
-```
-## predict_results.csv.
-Prediction results of different activation functions.
-## dataset.csv.
-Training set, Validation set, and Test set are used to compare with other methods on an independent validation set.
+# 10-fold cross-validation: use cv_fold.py
+python cv_fold.py
 
-# TransPTM
-## Prepare in advance
-You need to Download relevant files at https://hf-mirror.com/Rostlab/prot_t5_xl_half_uniref50-enc/tree/main.
-Generate graph data：
-```python
-python generate_data.py
-```
-Train the TransPTM:
-```python
-python main.py
-```
+# Model testing: use predict.py
+python predict.py
+
+
+
+
