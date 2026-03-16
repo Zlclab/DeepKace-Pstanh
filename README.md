@@ -10,9 +10,6 @@ data_code.py
 The models (DeepKace-Pstanh, DeepKace-ReLU, DeepKace-Tanh et al.) can be obtained by using different activation functions.
 The model is stored in the model_dl.py script.
 ```python
-# 10-fold cross-validation: run the training script
-data_train.py
-```python
 # 10-fold cross-validation: use data_train.py
 data_train.py
 
